@@ -1,0 +1,199 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #f8f8f8; 
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #8b0000; 
+    padding: 10px 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover, header nav a.active {
+    background-color: #ff0000; 
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ff0000; 
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.community-hero {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #262626; 
+}
+
+.community-hero h1 {
+    font-size: 2.5rem;
+}
+
+.community-hero p {
+    font-size: 1.2rem;
+}
+
+.spotlight {
+    padding: 20px;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.spotlight-item {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.spotlight-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.spotlight-item p {
+    font-size: 0.9rem;
+}
+
+.events ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.events li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    background: #8b0000;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blog {
+    padding: 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.blog-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.blog-login .button {
+    background-color: #8b0000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.blog-login .button:hover {
+    background-color: #ff0000;
+}
+
+.blog-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-posts li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.community-art {
+    padding: 20px;
+}
+
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.art-item {
+    text-align: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.art-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.art-item p {
+    font-size: 0.9rem;
+    color: #ff0000;
+}
+
+footer {
+    text-align: center;
+    background-color: #8b0000;
+    padding: 15px;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
